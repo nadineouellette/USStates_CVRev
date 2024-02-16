@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------------#
 # Program: Tests.r                                                            #
-# Description: Pieces of code to try out and/or test various things!					#
+# Description: Pieces of code to try out and/or test various stuff!					  #
 # Name: Nadine Ouellette                                                      #
 # Date: February 15 2024                                                      #
 #-----------------------------------------------------------------------------#
