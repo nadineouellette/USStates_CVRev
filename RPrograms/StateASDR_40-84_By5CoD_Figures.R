@@ -15,7 +15,7 @@ rm(list=ls(all=TRUE))
 # -----
 
 # Load ASDR array prepared by Magali, using data from the RDC
-setwd("~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/ROutputs")
+setwd("ROutputs")
 load(file="1959-2020/asdr_by5cod_4084.RData")
 ls()
 str(asdr.by5cod.4084)
@@ -89,7 +89,7 @@ col.reg <- c(col.reg1, col.reg2, col.reg3, col.reg4, col.reg5, col.reg6, col.reg
 
 # Plots
 # -----
-setwd("~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Figures/ASDR")
+setwd("Figures/ASDR")
 
 xtckmin <- 1960
 xtckmax <- 2020
@@ -107,7 +107,7 @@ pos.reg <- 2  ## position of region's names
 
 dev.off()
 pdf(paste("ASDR4084_Heart_USStates_", sex.id, ".pdf", sep=""), width=8.5, height=11)
-source(file="~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Rprograms/Fig_StatesByRegion.r")
+source(file="Rprograms/Fig_StatesByRegion.r")
 #title(paste("ASDR 40-84, Heart, ",
             #ifelse(sex.id=="m", "Males", "Females"), sep=""),
       #line=-1.15, cex.main=1.5, font.main=2, outer=TRUE)
@@ -126,7 +126,7 @@ pos.reg <- 4  ## position of region's names
 
 dev.off()
 pdf(paste("ASDR4084_OtherCVDs_USStates_", sex.id, ".pdf", sep=""), width=8.5, height=11)
-source(file="~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Rprograms/Fig_StatesByRegion.r")
+source(file="Rprograms/Fig_StatesByRegion.r")
 #title(paste("ASDR 40-84, MCVs, ",
 #ifelse(sex.id=="m", "Males", "Females"), sep=""),
 #line=-1.15, cex.main=1.5, font.main=2, outer=TRUE)
@@ -145,7 +145,7 @@ pos.reg <- 4  ## position of region's names
 
 dev.off()
 pdf(paste("ASDR40-84_SmkRelMN_USStates_", sex.id, ".pdf", sep=""),width=8.5,height=11)
-source(file="~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Rprograms/Fig_StatesByRegion.r")
+source(file="Rprograms/Fig_StatesByRegion.r")
 #title(paste("ASDR 40-84, Cancers, ",
       #ifelse(sex.id=="m", "Males", "Females"), sep=""),
       #line=-1.15, cex.main=1.5, font.main=2, outer=TRUE)
@@ -164,7 +164,7 @@ pos.reg <- ifelse(sex.id=="m", 4, 2)  ## position of region's names
 
 dev.off()
 pdf(paste("ASDR40-84_OtherMN_USStates_", sex.id, ".pdf", sep=""),width=8.5,height=11)
-source(file="~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Rprograms/Fig_StatesByRegion.r")
+source(file="Rprograms/Fig_StatesByRegion.r")
 #title(paste("ASDR 40-84, Cancers, ",
       #ifelse(sex.id=="m", "Males", "Females"), sep=""),
       #line=-1.15, cex.main=1.5, font.main=2, outer=TRUE)
@@ -183,7 +183,7 @@ pos.reg <- 2  ## position of region's names
 
 dev.off()
 pdf(paste("ASDR40-84_Other5CoD_USStates_", sex.id, ".pdf", sep=""),width=8.5,height=11)
-source(file="~/OneDrive - Universite de Montreal/Projet_USStates_Mortality/USStates_CVRev/Rprograms/Fig_StatesByRegion.r")
+source(file="Rprograms/Fig_StatesByRegion.r")
 #title(paste("ASDR 40-84, Cancers, ",
       #ifelse(sex.id=="m", "Males", "Females"), sep=""),
       #line=-1.15, cex.main=1.5, font.main=2, outer=TRUE)
