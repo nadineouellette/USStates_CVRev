@@ -1,6 +1,7 @@
 library(vroom)
 library(tidyverse)
 library(janitor)
+
 data_files <-dir("Data/smoking")
 all_data <- list()
 for (i in 1:length(data_files)){
@@ -27,3 +28,5 @@ smoking |>
   ggplot(aes(x = year, y = dpacks, group = state)) +
   geom_line(color = gray(.1), alpha = .8) +
   theme_minimal()
+
+write_csv(smoking, file = "Data/smoking/packs_percap.csv")
